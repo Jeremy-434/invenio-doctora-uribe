@@ -137,7 +137,7 @@ export default function Preloader() {
             fontWeight: 600,
           }}
         >
-          Dra. Ileynne Ordoñez
+          Dra. Clara Elisa Uribe Herrera
         </div>
 
         {/* Name */}
@@ -152,7 +152,7 @@ export default function Preloader() {
             fontWeight: 400,
           }}
         >
-          Psicóloga Clínica Cristiana · Bogotá
+          Psicóloga Clínica · Bogotá
         </div>
       </div>
     </div>

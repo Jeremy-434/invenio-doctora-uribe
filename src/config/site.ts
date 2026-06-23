@@ -104,103 +104,106 @@ export interface SiteConfig {
     navLinks: string[];
     copyright: string;
   };
+  social: {
+    linkedin: string;
+    facebook: string;
+  };
 }
 
 export const siteConfig: SiteConfig = {
   brand: {
-    name: 'Dra. Ileynne Ordoñez',
-    // name: 'Dra. Ileynne Stephany Ordoñez Olaya',
-    tagline: 'Psicología clínica cristiana con enfoque integral. Neuropsicología, terapia de pareja y familia.',
+    name: 'Dra. Clara Elisa Uribe Herrera',
+    tagline: 'Psicología clínica con enfoque sistémico y holístico. Neuropsicología, terapia infantil y familiar.',
     logo: '/images/logo.svg',
     logoInverted: '/images/logo-inverted.svg',
   },
   whatsapp: {
-    number: '+573183780170',
-    defaultMessage: 'Hola Dra. Ileynne, me gustaría agendar una consulta psicológica.',
+    number: '+573143286618',
+    defaultMessage: 'Hola Dra. Clara Elisa, me gustaría agendar una consulta psicológica.',
   },
-  ghlCalendarId: 'tpXLKhGrR4ruEcheqPwv',
+  ghlCalendarId: 'lRPFwJAjpYNAAI66BHlY',
   calendarBaseUrl: 'https://www.invenioagency.com/widget/booking/',
   seo: {
-    title: 'Dra. Ileynne Stephany Ordoñez Olaya | Psicóloga Clínica en Bogotá',
-    description: 'Psicóloga clínica cristiana con formación en neuropsicología y terapia de pareja y familia. Atención en línea para pacientes en Colombia y el exterior.',
+    title: 'Dra. Clara Elisa Uribe Herrera | Psicóloga Clínica en Bogotá',
+    description: 'Psicóloga clínica con 22 años de experiencia. Especialista en neuropsicología, terapia infantil, autismo y terapia familiar. Consultas presenciales en Kennedy, Bogotá.',
     ogImage: '/og-image.jpeg',
     canonicalUrl: 'https://doctoraeileynne.co',
   },
   hero: {
-    headline: 'Terapia que restaura\nel alma y fortalece la fe.',
-    subheadline: 'Acompañamiento terapéutico con principios cristianos para ansiedad, depresión, duelos y conflictos de pareja. Psicología clínica integrada en neuropsicología y terapia basada en evidencia.',
-    trust: '★ · Psicóloga Clínica Cristiana | Núm. Colegiado: 116956',
+    headline: 'Psicología con amor,\nexperiencia y propósito.',
+    subheadline: 'Acompañamiento terapéutico con enfoque sistémico y holístico para niños, familias y adultos. 22 años de experiencia en neuropsicología, terapia infantil, evaluación de inteligencia y resolución de conflictos.',
+    trust: '★ · Psicóloga Clínica | Núm. Colegiado: 252093',
     ctaPrimary: 'Agendar',
   },
   trustIndicators: {
-    logos: ['Psicóloga Clínica Cristiana', 'Terapia Cognitivo Conductual', 'Neuropsicología'],
-    metrics: 'Especialista en Psicología Cristiana y Bienestar Emocional',
-    objections: ['Solo pacientes particulares', 'Efectivo, Transferencia o Tarjeta de débito', 'Consultas 100% en línea'],
+    logos: ['Psicóloga Clínica', 'Terapia Sistémica', 'Neuropsicología'],
+    metrics: '22 años de experiencia acompañando niños, familias y adultos',
+    objections: ['Niños, adolescentes y adultos', 'Efectivo o Tarjeta de crédito', 'Consultas presenciales · Kennedy, Bogotá'],
   },
   services: {
     title: 'Especialidades',
     items: [
       {
-        title: 'Consulta Psicológica en Línea',
+        title: 'Consulta Psicológica',
         icon: '01',
-        description: 'Atención para ansiedad, depresión y sanidad emocional. 100% en línea. Desde $130.000',
+        description: 'Diagnóstico inicial y acompañamiento en ansiedad, depresión, duelo y dependencia emocional. Desde $100.000',
       },
       {
-        title: 'Consulta Virtual de Pareja',
+        title: 'Psicoterapia Infantil',
         icon: '02',
-        description: 'Conflictos de pareja, comunicación y restauración matrimonial. Desde $160.000',
+        description: 'Acompañamiento para niños con dificultades emocionales, conductuales o de desarrollo. Desde $250.000',
       },
       {
-        title: 'Terapia Familiar',
+        title: 'Asesoría en Autismo y Familias',
         icon: '03',
-        description: 'Orientación familiar y fortalecimiento de vínculos. Desde $150.000',
+        description: 'Evaluación, acompañamiento y orientación para personas con autismo y sus familias. Desde $250.000',
       },
       {
-        title: 'Consulta Psicológica Infantil',
+        title: 'Terapia de Pareja',
         icon: '04',
-        description: 'Acompañamiento para niños y orientación a padres en pautas de crianza. Desde $130.000',
+        description: 'Mediación en conflictos, comunicación y resolución de conflictos de pareja. Desde $100.000',
       },
       {
         title: 'Evaluación Neuropsicológica',
         icon: '05',
-        description: 'Evaluación en adolescentes y adultos con formación integral. Desde $150.000',
+        description: 'Evaluación integral en adolescentes y adultos. Incluye coeficiente intelectual y perfil neuropsicológico. Desde $200.000',
       },
       {
-        title: 'Salud Mental Empresarial',
+        title: 'Psicoterapia Adulto Mayor',
         icon: '06',
-        description: 'Capacitaciones y asesoría psicológica para equipos y organizaciones. Desde $300.000',
+        description: 'Acompañamiento terapéutico y certificados de lucidez mental para adulto mayor. Desde $150.000',
       },
       {
-        title: 'Coaching Familiar',
+        title: 'Terapia Familiar',
         icon: '07',
-        description: 'Desarrollo integral de la familia con enfoque cristiano. Desde $250.000',
+        description: 'Orientación y fortalecimiento de vínculos familiares con enfoque sistémico. Desde $100.000',
       },
     ],
-    cta: 'Agenda tu consulta en línea. Escríbenos por WhatsApp.',
+    cta: 'Agenda tu consulta. Escríbenos por WhatsApp.',
   },
   process: {
     title: 'Metodología Clínica',
-    subtitle: 'Un proceso cálido, riguroso e integrado con principios cristocéntricos.',
+    subtitle: 'Un proceso cálido, riguroso e integrado con enfoque sistémico y holístico.',
     steps: [
       {
         number: '01',
         title: 'Agendas',
-        description: 'Contacto sencillo y discreto. Tu cita coordinada de forma rápida 100% en línea desde cualquier lugar de Colombia o el exterior.',
+        description: 'Contacto sencillo y discreto. Tu cita coordinada de forma rápida presencial o en línea desde cualquier lugar.',
       },
       {
         number: '02',
         title: 'Evaluamos',
-        description: 'Historia clínica profunda y evaluación psicológica integral con formación en neuropsicología, en un entorno seguro y sin juicios.',
+        description: 'Historia clínica profunda y evaluación psicológica integral con formación en neuropsicología y enfoque sistémico, en un entorno seguro y sin juicios.',
       },
       {
         number: '03',
         title: 'Tratamos',
-        description: 'Psicoterapia individual, familiar o de pareja integrando TCC, terapia cristiana y terapias basadas en evidencia.',
+        description: 'Psicoterapia individual, familiar o de pareja integrando terapia sistémica, holística y herramientas basadas en evidencia.',
       },
       {
         number: '04',
         title: 'Seguimos',
-        description: 'Acompañamiento continuo con amor, empatía y propósito. Revisión de avances hasta restaurar el alma, renovar la mente y fortalecer la fe.',
+        description: 'Acompañamiento continuo con amor, empatía y propósito. Revisión de avances hasta restaurar el bienestar emocional y fortalecer los vínculos.',
       },
     ],
   },
@@ -208,25 +211,25 @@ export const siteConfig: SiteConfig = {
     title: 'Modalidades de Atención',
     items: [
       {
-        title: 'Videoconsulta en Línea',
-        description: 'Sesiones 100% en línea desde cualquier ciudad de Colombia o el exterior. Misma calidad clínica, ambiente cálido y confidencial.',
+        title: 'Consulta Presencial',
+        description: 'Atención en consultorio ubicado en Kennedy, Bogotá. Ambiente cálido, confidencial y profesional para niños, adolescentes y adultos.',
         image: '/infra-1.jpeg',
       },
       {
-        title: 'Enfoque Cristiano-Clínico',
-        description: 'Integración de Psicología Cristiana con TCC y terapias basadas en evidencia. Atención que reconoce la dimensión emocional y espiritual.',
+        title: 'Enfoque Sistémico y Holístico',
+        description: 'Integración de terapia sistémica, terapia familiar y herramientas basadas en evidencia. Atención que reconoce la dimensión emocional, relacional y social.',
         image: '/infra-2.jpeg',
       },
       {
-        title: 'Especialización en Neuropsicología',
-        description: 'Evaluación neuropsicológica en adolescentes y adultos. Formación integral para entender cómo mente, emociones y fe se conectan.',
+        title: 'Especialización en Niños y Neuropsicología',
+        description: '22 años acompañando procesos de familias con niños y adolescentes. Evaluación neuropsicológica, CI, orientación vocacional y diagnóstico de autismo.',
         image: '/infra-3.jpeg',
       },
     ],
   },
   educational: {
     title: 'Psicología con propósito',
-    subtitle: 'Contenido psicoeducativo desde una perspectiva cristiana y clínica. Conocimiento para restaurar el alma y renovar la mente.',
+    subtitle: 'Conocimiento para el bienestar emocional y el fortalecimiento de familias.',
     youtubeLink: 'https://youtube.com',
     videoUrl: '/video-intro.mp4',
   },
@@ -234,9 +237,9 @@ export const siteConfig: SiteConfig = {
     title: 'Quién te acompaña',
     members: [
       {
-        name: 'Dra. Ileynne Stephany Ordoñez Olaya',
-        role: 'Psicóloga Clínica Cristiana | Neuropsicología & Terapia de Pareja y Familia',
-        description: 'Soy psicóloga clínica cristiana con formación en neuropsicología y en terapia de pareja y familia. Mi práctica profesional está fundamentada en la Psicología Cristiana y en el enfoque cognitivo–conductual, integrando herramientas de la psicología basada en la evidencia con principios y valores cristocéntricos. De esta manera, brindo una atención que reconoce y fortalece tanto la dimensión emocional como espiritual del ser humano. Acompaño procesos con amor, empatía y propósito en: ansiedad, depresión y sanidad emocional; duelos, crisis de fe, rupturas y propósito de vida; conflictos de pareja, comunicación y restauración matrimonial; orientación familiar y fortalecimiento de vínculos; evaluación neuropsicológica en adolescentes y adultos. Núm. Colegiado: 116956.',
+        name: 'Dra. Clara Elisa Uribe Herrera',
+        role: 'Psicóloga Clínica | Neuropsicología, Terapia Sistémica y Terapia Infantil',
+        description: 'Soy psicóloga clínica con 22 años de experiencia acompañando procesos de familias con niños, niñas y adolescentes. Mi práctica integra la terapia sistémica, el enfoque holístico y la neuropsicología para brindar atención integral a niños, adultos y adultos mayores. Me he desempeñado en el Hospital del Sur E.S.E., Hospital Vista Hermosa E.S.E., Profamilia y la Gobernación del Meta. Cuento con reconocimientos de ONG Compassion International y UNICEF por mi labor con la infancia. Formación: Psicóloga de la Universidad Antonio Nariño, Especialista en Docencia Universitaria (Universidad Cooperativa de Colombia), Magíster en Neuropsicología con énfasis en Educación y Magíster en Mediación y Resolución de Conflictos (Universidad TECH). Núm. Colegiado: 252093.',
         image: '/hero.jpg',
       },
     ],
@@ -245,39 +248,39 @@ export const siteConfig: SiteConfig = {
     title: 'Lo que dicen mis pacientes',
     items: [
       {
-        quote: 'Muy bonitas las sesiones con Stephany, muchas Gracias por su tiempo',
-        author: 'Carlos Fuentes',
-        date: '15 de enero de 2026',
+        quote: 'Todo el trabajo que ha tenido con mi hijo me ha gustado bastante. Hace muy buena terapia.',
+        author: 'Lina R.',
+        date: '28 de agosto de 2024',
         stars: 5,
       },
       {
-        quote: 'Es muy cálida en especial en mi caso con adolecente',
-        author: 'Diana R.',
-        date: '10 de enero de 2026',
+        quote: 'Es una mujer muy íntegra e inteligente y amante de su profesión. Sabe tratar muy bien a los niños y les demuestra cariño y afecto.',
+        author: 'Bibiana V.',
+        date: '26 de agosto de 2024',
         stars: 5,
       },
       {
-        quote: 'La Dra Ileynne se destaca por su alto nivel de profesionalismo, ética y compromiso con el bienestar de sus pacientes. Facilita procesos de autoconocimiento y desarrollo personal que contribuyen significativamente a la salud mental y emocional.',
-        author: 'Manuel Alexander',
-        date: '29 de agosto de 2025',
+        quote: 'Excelencia en la consulta. Me parece súper la forma tan detallada del proceso.',
+        author: 'Marlon S.',
+        date: '24 de agosto de 2024',
         stars: 5,
       },
       {
-        quote: 'En mi opinión siento que es un espacio seguro en el cual me transmitio mucha confianza y se que con su experiencia nos va ayudar mucho con mi hijo.',
-        author: 'Luz Myriam Barrios Cely',
-        date: '28 de agosto de 2025',
+        quote: 'Excelente. Buen trato con mi niño paciente, empática y muy atenta.',
+        author: 'Nidya H.',
+        date: '21 de agosto de 2024',
         stars: 5,
       },
       {
-        quote: 'Una terapia muy productiva sinceramente escucharla me da paz y sus consejos me ayudan mucho para ser mejor cada día.. Gracias Doctora Stephany',
-        author: 'Alex Villa',
-        date: '31 de julio de 2025',
+        quote: 'Es una profesional muy cálida, conoce mucho de su campo y acompaña muy bien cada proceso.',
+        author: 'Carmen y Jorge',
+        date: '13 de agosto de 2024',
         stars: 5,
       },
       {
-        quote: 'Me sentí muy escuchada y se notó la disposición y el compromiso para ayudarme',
-        author: 'Valeria Ramírez',
-        date: '29 de julio de 2025',
+        quote: 'Es una persona muy profesional, me hizo sentir a gusto.',
+        author: 'L.M.',
+        date: '15 de agosto de 2024',
         stars: 5,
       },
     ],
@@ -303,49 +306,53 @@ export const siteConfig: SiteConfig = {
     title: 'Preguntas Frecuentes',
     questions: [
       {
-        q: '¿Cuáles son las especialidades principales de la Dra. Ileynne?',
-        a: 'La Dra. Ileynne es Psicóloga Clínica Cristiana y Neuropsicóloga. Ofrece: Consulta Psicológica en Línea, Consulta Virtual de Pareja, Terapia Familiar, Consulta Psicológica Infantil, Evaluación Neuropsicológica, Salud Mental Empresarial, Coaching Familiar, Psicoterapia Individual, y Asesoría Psicológica con principios cristianos.',
+        q: '¿Cuáles son las especialidades principales de la Dra. Clara Elisa?',
+        a: 'La Dra. Clara Elisa es Psicóloga Clínica y Neuropsicóloga con enfoque sistémico y holístico. Ofrece: Consulta Psicológica, Psicoterapia Infantil, Asesoría en Autismo, Terapia de Pareja, Evaluación Neuropsicológica, Evaluación de Inteligencia (CI), Psicoterapia para Adulto Mayor y Terapia Familiar.',
       },
       {
         q: '¿En dónde está ubicado el consultorio?',
-        a: 'La Dra. Ileynne atiende a sus pacientes en: CARRERA 55 No 152B-68, Suba, Bogotá 101111. Las consultas son 100% en línea, lo que permite atender a pacientes en cualquier ciudad de Colombia o en el exterior.',
+        a: 'La Dra. Clara Elisa atiende en: Calle 8 #86-65 Apartamento 504 Torre 1, Kennedy, Bogotá 110110.',
       },
       {
         q: '¿Puedo tener la consulta en línea sin desplazarme?',
-        a: 'Sí, la Dra. Ileynne ofrece consulta 100% en línea. Solo tienes que seleccionar una fecha y hora disponible en el calendario y acceder desde cualquier lugar con conexión a internet.',
+        a: 'Sí, la Dra. Clara Elisa ofrece consulta en línea. Consulta disponibilidad y agenda tu cita a través del formulario o por WhatsApp.',
       },
       {
         q: '¿Cómo se realiza el pago al finalizar la consulta?',
-        a: 'La Dra. Ileynne recibe los siguientes métodos de pago: Efectivo, Tarjeta de débito y Transferencia bancaria.',
+        a: 'La Dra. Clara Elisa recibe los siguientes métodos de pago: Efectivo y Tarjeta de crédito.',
       },
       {
-        q: '¿Qué idiomas habla la Dra. Ileynne?',
-        a: 'Puedes comunicarte con la Dra. Ileynne en Español.',
+        q: '¿Qué idiomas habla la Dra. Clara Elisa?',
+        a: 'Puedes comunicarte con la Dra. Clara Elisa en Español.',
       },
       {
         q: '¿Cómo puedo reservar una cita?',
-        a: 'El calendario está actualizado en tiempo real. Solo tienes que elegir el día y hora que te convengan entre las disponibles. La reserva es gratuita y recibirás un recordatorio por WhatsApp antes de la consulta.',
+        a: 'Puedes agendar directamente desde el calendario en esta página o contactar por WhatsApp para ver disponibilidad. La reserva es gratuita y recibirás un recordatorio antes de la consulta.',
       },
       {
-        q: '¿Cuándo podría tener una cita?',
-        a: 'Hay horas disponibles durante la semana. Consulta el calendario actualizado en tiempo real para ver la primera hora disponible. La reserva es siempre inmediata y gratuita. También puedes contactar por WhatsApp al 318 378 0170.',
+        q: '¿Atiende niños y adultos?',
+        a: 'Sí. La Dra. Clara Elisa tiene 22 años de experiencia con niños, niñas, adolescentes y adultos. También ofrece servicios especializados para adulto mayor.',
       },
       {
         q: '¿Acepta aseguradoras?',
-        a: 'No. La Dra. Ileynne solo atiende pacientes particulares. Puedes pagar directamente para reservar tu cita. No se trabaja con aseguradoras ni EPS.',
+        a: 'Se aceptan aseguradoras, pero la cobertura varía según el servicio. Contáctanos directamente para confirmar. También se atienden pacientes particulares.',
       },
     ],
   },
   contact: {
     title: 'Agenda tu consulta',
-    location: 'CARRERA 55 No 152B-68, Suba, Bogotá 101111',
-    mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.5819346543826!2d-74.07844932346816!3d4.749116496556217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f8f5e5e5e5e5d%3A0x5e5e5e5e5e5e5e5e!2sCarrera%2055%20%23152B-68%2C%20Suba%2C%20Bogot%C3%A1%2C%20Colombia!5e0!3m2!1ses!2sus!4v1718000000000',
+    location: 'Calle 8 #86-65 Apt. 504 Torre 1, Kennedy, Bogotá 110110',
+    mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.6789912345678!2d-74.15944932346816!3d4.701234496556217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f7f5e5e5e5e5d%3A0x5e5e5e5e5e5e5e5e!2sCalle%208%20%23%2086-65%2C%20Kennedy%2C%20Bogot%C3%A1%2C%20Colombia!5e0!3m2!1ses!2sus!4v1718000000000',
     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    reasons: ['Ansiedad o depresión', 'Terapia de pareja', 'Psicología infantil', 'Neuropsicología', 'Sanidad emocional', 'Crisis de fe', 'Coaching familiar', 'Otro'],
+    reasons: ['Ansiedad o depresión', 'Terapia de pareja', 'Psicología infantil', 'Autismo', 'Neuropsicología', 'Adulto mayor', 'Duelo', 'Otro'],
   },
   footer: {
-    tagline: 'Psicología clínica cristiana que restaura el alma y fortalece la fe. Con amor. Con propósito.',
+    tagline: 'Psicología clínica con amor y propósito. 22 años acompañando familias, niños y adultos.',
     navLinks: ['Especialidades', 'Proceso', 'Sobre mí', 'Reseñas', 'Ubicación'],
-    copyright: '© 2026 Dra. Ileynne Stephany Ordoñez Olaya. Todos los derechos reservados.',
+    copyright: '© 2026 Dra. Clara Elisa Uribe Herrera. Todos los derechos reservados.',
+  },
+  social: {
+    linkedin: 'https://www.linkedin.com/in/clara-elisa-uribe-herrera-5131a423a/',
+    facebook: 'https://www.facebook.com/Psicologaclaritauribe/',
   },
 };
