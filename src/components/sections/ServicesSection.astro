@@ -12,6 +12,11 @@ interface Props {
       description: string;
     }>;
     cta: string;
+    packages?: {
+      note: string;
+      items: Array<{ sessions: number; price: string }>;
+      footnote: string;
+    };
   };
 }
 
@@ -31,6 +36,21 @@ const { services } = Astro.props;
         ))
       }
     </div>
+
+    {services.packages && (
+      <div class="mt-12 p-8 border border-border-light">
+        <p class="text-text-muted mb-8 max-w-3xl">{services.packages.note}</p>
+        <div class="flex flex-col md:flex-row gap-4 mb-6">
+          {services.packages.items.map((pkg) => (
+            <div class="border border-border-light px-6 py-6 text-center flex-1">
+              <span class="block text-3xl font-bold text-text font-display mb-1">{pkg.sessions} sesiones</span>
+              <span class="text-accent font-display text-xl">{pkg.price}</span>
+            </div>
+          ))}
+        </div>
+        <p class="text-sm text-text-muted italic">{services.packages.footnote}</p>
+      </div>
+    )}
 
     <div class="mt-16 pt-8 border-t border-border-light flex flex-col md:flex-row items-center justify-between gap-8">
       <p class="text-xl text-text-muted font-display italic">

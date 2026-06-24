@@ -36,6 +36,11 @@ export interface SiteConfig {
       description: string;
     }>;
     cta: string;
+    packages?: {
+      note: string;
+      items: Array<{ sessions: number; price: string }>;
+      footnote: string;
+    };
   };
   process: {
     title: string;
@@ -125,19 +130,19 @@ export const siteConfig: SiteConfig = {
   calendarBaseUrl: 'https://www.invenioagency.com/widget/booking/',
   seo: {
     title: 'Dra. Clara Elisa Uribe Herrera | Psicóloga Clínica en Bogotá',
-    description: 'Psicóloga clínica con 22 años de experiencia. Especialista en neuropsicología, terapia infantil, autismo y terapia familiar. Consultas presenciales en Kennedy, Bogotá.',
+    description: 'Psicóloga clínica con 24 años de experiencia. Especialista en neuropsicología, terapia infantil, autismo y terapia familiar. Consultas presenciales en Kennedy, Bogotá.',
     ogImage: '/og-image.jpeg',
     canonicalUrl: 'https://doctoraeileynne.co',
   },
   hero: {
     headline: 'Psicología con amor,\nexperiencia y propósito.',
-    subheadline: 'Acompañamiento terapéutico con enfoque sistémico y holístico para niños, familias y adultos. 22 años de experiencia en neuropsicología, terapia infantil, evaluación de inteligencia y resolución de conflictos.',
+    subheadline: 'Acompañamiento terapéutico con enfoque sistémico y holístico para niños, familias y adultos. 24 años de experiencia en neuropsicología, terapia infantil, evaluación de inteligencia y resolución de conflictos.',
     trust: '★ · Psicóloga Clínica | Núm. Colegiado: 252093',
     ctaPrimary: 'Agendar',
   },
   trustIndicators: {
     logos: ['Psicóloga Clínica', 'Terapia Sistémica', 'Neuropsicología'],
-    metrics: '22 años de experiencia acompañando niños, familias y adultos',
+    metrics: '24 años de experiencia acompañando niños, familias y adultos',
     objections: ['Niños, adolescentes y adultos', 'Efectivo o Tarjeta de crédito', 'Consultas presenciales · Kennedy, Bogotá'],
   },
   services: {
@@ -146,22 +151,22 @@ export const siteConfig: SiteConfig = {
       {
         title: 'Consulta Psicológica',
         icon: '01',
-        description: 'Diagnóstico inicial y acompañamiento en ansiedad, depresión, duelo y dependencia emocional. Desde $100.000',
+        description: 'Diagnóstico inicial y acompañamiento en ansiedad, depresión, duelo y dependencia emocional. Desde $200.000',
       },
       {
         title: 'Psicoterapia Infantil',
         icon: '02',
-        description: 'Acompañamiento para niños con dificultades emocionales, conductuales o de desarrollo. Desde $250.000',
+        description: 'Acompañamiento para niños con dificultades emocionales, conductuales o de desarrollo. Desde $200.000',
       },
       {
-        title: 'Asesoría en Autismo y Familias',
+        title: 'Pruebas Neurocognitivas para detección de Autismo',
         icon: '03',
-        description: 'Evaluación, acompañamiento y orientación para personas con autismo y sus familias. Desde $250.000',
+        description: 'Evaluación neurocognitiva para la detección de autismo en niños y adultos. Diagnóstico clínico riguroso mediante batería de pruebas propias. Desde $200.000',
       },
       {
         title: 'Terapia de Pareja',
         icon: '04',
-        description: 'Mediación en conflictos, comunicación y resolución de conflictos de pareja. Desde $100.000',
+        description: 'Mediación en conflictos, comunicación y resolución de conflictos de pareja. Desde $250.000',
       },
       {
         title: 'Evaluación Neuropsicológica',
@@ -171,15 +176,44 @@ export const siteConfig: SiteConfig = {
       {
         title: 'Psicoterapia Adulto Mayor',
         icon: '06',
-        description: 'Acompañamiento terapéutico y certificados de lucidez mental para adulto mayor. Desde $150.000',
+        description: 'Acompañamiento terapéutico y certificados de lucidez mental para adulto mayor. Desde $200.000',
       },
       {
         title: 'Terapia Familiar',
         icon: '07',
-        description: 'Orientación y fortalecimiento de vínculos familiares con enfoque sistémico. Desde $100.000',
+        description: 'Orientación y fortalecimiento de vínculos familiares con enfoque sistémico. Desde $250.000',
+      },
+      {
+        title: 'Rehabilitación Cognitiva',
+        icon: '08',
+        description: 'La rehabilitación cognitiva es un proceso terapéutico destinado a recuperar, fortalecer o compensar funciones cognitivas alteradas por lesión neurológica, enfermedad o deterioro asociado a la edad. Trabajamos memoria, atención, lenguaje, planificación y razonamiento. Desde $200.000',
+      },
+      {
+        title: 'Asesoría en Orientación Vocacional',
+        icon: '09',
+        description: 'Acompañamiento profesional para identificar habilidades, intereses y potencial vocacional. Una guía clara para decisiones de vida y carrera. Desde $200.000',
+      },
+      {
+        title: 'Talleres Vivenciales',
+        icon: '10',
+        description: 'Espacios experienciales donde vivimos la neurociencia para sanar mentes, corazones y comunidades. Dirigidos a personas, grupos y empresas. Disponibles en formato presencial y corporativo. Consultar disponibilidad.',
+      },
+      {
+        title: 'Valoración para Certificación de Tenencia de Mascotas de Apoyo Emocional',
+        icon: '11',
+        description: 'Valoración psicológica y certificación oficial de tenencia de mascotas de apoyo emocional. Miembro certificada de ACZOA. Consultar valor.',
       },
     ],
     cta: 'Agenda tu consulta. Escríbenos por WhatsApp.',
+    packages: {
+      note: 'La consulta inicial de diagnóstico con plan de tratamiento y pruebas iniciales tiene un valor de $200.000. Para pacientes que requieren un proceso de 3 a 12 terapias según su diagnóstico, aplican los siguientes paquetes:',
+      items: [
+        { sessions: 5, price: '$440.000' },
+        { sessions: 8, price: '$880.000' },
+        { sessions: 12, price: '$1.200.000' },
+      ],
+      footnote: 'Los paquetes aplican para Consulta Psicológica y Rehabilitación Cognitiva.',
+    },
   },
   process: {
     title: 'Metodología Clínica',
@@ -239,7 +273,7 @@ export const siteConfig: SiteConfig = {
       {
         name: 'Dra. Clara Elisa Uribe Herrera',
         role: 'Psicóloga Clínica | Neuropsicología, Terapia Sistémica y Terapia Infantil',
-        description: 'Soy psicóloga clínica con 22 años de experiencia acompañando procesos de familias con niños, niñas y adolescentes. Mi práctica integra la terapia sistémica, el enfoque holístico y la neuropsicología para brindar atención integral a niños, adultos y adultos mayores. Me he desempeñado en el Hospital del Sur E.S.E., Hospital Vista Hermosa E.S.E., Profamilia y la Gobernación del Meta. Cuento con reconocimientos de ONG Compassion International y UNICEF por mi labor con la infancia. Formación: Psicóloga de la Universidad Antonio Nariño, Especialista en Docencia Universitaria (Universidad Cooperativa de Colombia), Magíster en Neuropsicología con énfasis en Educación y Magíster en Mediación y Resolución de Conflictos (Universidad TECH). Núm. Colegiado: 252093.',
+        description: 'Soy psicóloga clínica con 24 años de experiencia acompañando procesos de familias con niños, niñas y adolescentes. Mi práctica integra la terapia sistémica, el enfoque holístico y la neuropsicología para brindar atención integral a niños, adultos y adultos mayores. Me he desempeñado en el Hospital del Sur E.S.E., Hospital Vista Hermosa E.S.E., Profamilia y la Gobernación del Meta. Cuento con reconocimientos de ONG Compassion International y UNICEF por mi labor con la infancia. Soy miembro de ACZOA (Asociación Colombiana de Zoología y Animales de Apoyo Emocional) y cuento con batería de pruebas de mi autoría, así como un protocolo especial con trabajo directo en los CRC de Bogotá para pacientes aplazados. Autora de los libros "Sanando con amor" y "Un viaje a tu niño interior". Formación: Psicóloga de la Universidad Antonio Nariño, Especialista en Docencia Universitaria (Universidad Cooperativa de Colombia), Magíster en Neuropsicología con énfasis en Educación y Magíster en Mediación y Resolución de Conflictos (Universidad TECH). Núm. Colegiado: 252093.',
         image: '/hero.jpg',
       },
     ],
@@ -247,6 +281,12 @@ export const siteConfig: SiteConfig = {
   testimonials: {
     title: 'Lo que dicen mis pacientes',
     items: [
+      {
+        quote: 'Buenas tardes, me encantó la experiencia, el manejo y la atención prestada a mi hija por parte de la Dra. Clara Uribe. Muchas gracias.',
+        author: 'Lilibeth B.',
+        date: '19 de junio de 2026',
+        stars: 5,
+      },
       {
         quote: 'Todo el trabajo que ha tenido con mi hijo me ha gustado bastante. Hace muy buena terapia.',
         author: 'Lina R.',
@@ -307,7 +347,7 @@ export const siteConfig: SiteConfig = {
     questions: [
       {
         q: '¿Cuáles son las especialidades principales de la Dra. Clara Elisa?',
-        a: 'La Dra. Clara Elisa es Psicóloga Clínica y Neuropsicóloga con enfoque sistémico y holístico. Ofrece: Consulta Psicológica, Psicoterapia Infantil, Asesoría en Autismo, Terapia de Pareja, Evaluación Neuropsicológica, Evaluación de Inteligencia (CI), Psicoterapia para Adulto Mayor y Terapia Familiar.',
+        a: 'La Dra. Clara Elisa es Psicóloga Clínica y Neuropsicóloga con enfoque sistémico y holístico. Ofrece: Consulta Psicológica, Psicoterapia Infantil, Pruebas Neurocognitivas para detección de Autismo, Terapia de Pareja, Evaluación Neuropsicológica, Evaluación de Inteligencia (CI), Psicoterapia para Adulto Mayor, Terapia Familiar, Rehabilitación Cognitiva, Asesoría en Orientación Vocacional, Talleres Vivenciales y Valoración para Certificación de Mascotas de Apoyo Emocional.',
       },
       {
         q: '¿En dónde está ubicado el consultorio?',
@@ -331,7 +371,7 @@ export const siteConfig: SiteConfig = {
       },
       {
         q: '¿Atiende niños y adultos?',
-        a: 'Sí. La Dra. Clara Elisa tiene 22 años de experiencia con niños, niñas, adolescentes y adultos. También ofrece servicios especializados para adulto mayor.',
+        a: 'Sí. La Dra. Clara Elisa tiene 24 años de experiencia con niños, niñas, adolescentes y adultos. También ofrece servicios especializados para adulto mayor.',
       },
       {
         q: '¿Acepta aseguradoras?',
@@ -347,7 +387,7 @@ export const siteConfig: SiteConfig = {
     reasons: ['Ansiedad o depresión', 'Terapia de pareja', 'Psicología infantil', 'Autismo', 'Neuropsicología', 'Adulto mayor', 'Duelo', 'Otro'],
   },
   footer: {
-    tagline: 'Psicología clínica con amor y propósito. 22 años acompañando familias, niños y adultos.',
+    tagline: 'Psicología clínica con amor y propósito. 24 años acompañando familias, niños y adultos.',
     navLinks: ['Especialidades', 'Proceso', 'Sobre mí', 'Reseñas', 'Ubicación'],
     copyright: '© 2026 Dra. Clara Elisa Uribe Herrera. Todos los derechos reservados.',
   },
